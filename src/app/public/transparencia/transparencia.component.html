@@ -1,0 +1,26 @@
+<div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-inline"
+  data-src="./assets/images/fotografia/principal.jpg" uk-img>
+  <div class="uk-position-center-left bg-morado mt-5 ml-0 mr-md-5 px-5 border-medium-azul">
+    <h2 class="strong-pincipal ml-0 mr-md-5 px-5 m-0">TRANSPARENCIA</h2>
+  </div>
+</div>
+
+
+<div class="container my-4">
+  <h1 class="text-center strong text-azul-black mb-0">Información por dependencia</h1>
+  <h1 class="text-center strong text-azul-black mt-0">♦♦♦</h1>
+  <div class="row">
+    <div class="col-12 col-md-3" *ngFor="let card of cardsTransparencia">
+      <a class="url-no-style" [routerLink]="['/transparencia', card.url]">
+        <div class="card" >
+          <img [src]="card.img" class="card-img-top img-fluid" alt="">
+          <div class="card-body bg-morado">
+            <p class="card-text text-center">{{ card.titulo }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class=" py-4">
+</div>

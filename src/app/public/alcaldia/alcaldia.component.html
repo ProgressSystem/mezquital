@@ -1,0 +1,10 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 col-md-4" *ngFor="let persona of gabinete">
+      <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m my-3">
+        <h3 class="uk-card-title">{{ persona.cargo }}</h3>
+        <p>{{ persona.nombre }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <a class="btn btn-primary col-12" data-toggle="collapse" href="#municipio" role="button" aria-expanded="false" aria-controls="collapseExample">
+        MUNICIPIO
+      </a>
+    </div>
+    <div class="col-12 col-md-6">
+      <a class="btn btn-primary col-12" data-toggle="collapse" href="#dif" role="button" aria-expanded="false" aria-controls="collapseExample">
+        DIF
+      </a>
+    </div>
+  </div>
+  <div class="collapse mt-3" id="municipio">
+    <h3>MUNICIPIO</h3>
+    <form [formGroup]="editorForm" (ngSubmit)="onSubmit()">
+      <quill-editor [modules]="configModules" formControlName="municipio"
+        placeholder="" (ngModelChange)="municipio($event)">
+      </quill-editor>
+    </form>
+  </div>
+  <div class="collapse mt-3" id="dif">
+    <h3>DIF</h3>
+    <form [formGroup]="editorForm" (ngSubmit)="onSubmit()">
+      <quill-editor [modules]="configModules" formControlName="dif"
+        placeholder="" (ngModelChange)="dif($event)">
+      </quill-editor>
+    </form>
+  </div>
+  <button class="btn button-morado col-12 mt-5" (click)="onSubmit()">GUARDAR</button>
+</div>

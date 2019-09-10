@@ -1,0 +1,79 @@
+<div class="uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+  data-src="./assets/images/fotografia/principal.jpg" style="height: 90vh !important" uk-img>
+  <h1 class="strong-pincipal">
+    <span class="texto-chico-titulo">BIENVENIDO A</span>
+    <br>
+    <span class="text-grande-titulo">EL MEZQUITAL</span>
+    <br><button class="uk-button button-morado uk-align-center" [routerLink]="['nosotros']" >NUESTRO MUNICIPIO</button>
+  </h1>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6 col-md-3">
+      <a class="url-no-style" [routerLink]="['/transparencia']">
+        <div class="card" >
+          <div data-src="./assets/images/stock/vaca.png"
+            class="card-img-top uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-img></div>
+          <div class="card-body bg-morado">
+            <p class="card-text text-center">TRANSPARENCIA</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-6 col-md-3">
+      <a class="url-no-style" [routerLink]="['/pash']">
+        <div class="card" >
+          <div data-src="./assets/images/stock/calculadora.png"
+            class="card-img-top uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-img></div>
+          <div class="card-body bg-morado">
+            <p class="card-text text-center">REPORTE PASH</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-6 col-md-3">
+      <a class="url-no-style" [routerLink]="['/galeria']">
+        <div class="card" >
+          <div data-src="./assets/images/fotografia/IMG_1469.jpg"
+            class="card-img-top uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-img></div>
+          <div class="card-body bg-morado">
+            <p class="card-text text-center">GALERÍA</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-6 col-md-3">
+      <a class="url-no-style" [routerLink]="['/turismo']">
+        <div class="card" >
+          <div data-src="./assets/images/fotografia/turismo/ecoturistico.jpg"
+            class="card-img-top uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-img></div>
+          <div class="card-body bg-morado">
+            <p class="card-text text-center">TURISMO</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+      <img src="./assets/images/fotografia/nuestro_municipio/mediofisico.jpg" alt="" uk-cover>
+      <canvas height="300"></canvas>
+    </div>
+    <div>
+      <div class="uk-card-body bg-azul">
+        <h1 class="strong-pincipal mb-0 text-white">ALCADÍA</h1>
+        <h3 class="strong-pincipal m-0 text-azul-claro">EL MEZQUITAL</h3>
+        <p class="text-white">
+          El municipio de Mezquital limita al norte con los municipios de Súchil, Nombre de Dios y Durango, en la
+          zona sur con el estado de Nayarit, al este con el estado de Zacatecas, y al poniente con el estado de
+          Zacatecas y con el municipio de Pueblo Nuevo.
+        </p>
+        <a class="text-azul-claro strong-pincipal" [routerLink]="['/alcaldia']">LEER MÁS</a>
+      </div>
+    </div>
+  </div>
+</div>

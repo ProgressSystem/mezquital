@@ -1,0 +1,31 @@
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+  <nav class="uk-navbar uk-navbar-container borde-menu">
+    <div class="uk-navbar-left">
+      <a class="uk-navbar-toggle text-morado open-menu">
+          <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+      </a>
+      <!-- <span class="uk-navbar-toggle text-morado open-menu" uk-navbar-toggle-icon ><div class="pr-3">Menu</div></span>  -->
+    </div>
+    <a class="uk-navbar-item uk-logo uk-navbar-center" href="#"><img src="./assets/images/logo.png" alt=""></a>
+  </nav>
+</div>
+
+<div class="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li><a class="close-menu" [routerLink]="['/']">INICIO</a></li>
+      <li><a class="close-menu" [routerLink]="['/nosotros']">NUESTRO MUNICIPIO</a></li>
+      <li><a class="close-menu" [routerLink]="['/alcaldia']">ALCALDIA</a></li>
+      <li><a class="close-menu" [routerLink]="['/turismo']">TURISMO</a></li>
+      <li><a class="close-menu" [routerLink]="['/historia']">HISTORIA</a></li>
+      <li><a class="close-menu" href="https://consultapublicamx.inai.org.mx/vut-web/faces/view/consultaPublica.xhtml" target="_blank">ART65</a></li>
+      <li><a class="close-menu" [routerLink]="['/transparencia']">TRANSPARENCIA</a></li>
+      <li><a class="close-menu" [routerLink]="['/galeria']">GALERÍA</a></li>
+      <li><a class="close-menu" [routerLink]="['/pash']">REPORTES PASH</a></li>
+      <!-- <li><a class="close-menu" [routerLink]="['/']">AVISO DE PRIVACIDAD</a></li> -->
+      <li>
+        <i class="fas fa-times text-white close-menu"></i>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+  <form action="">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label class="" for="inputState">.</label>
+
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+          <label class="custom-file-label" for="validatedCustomFile">Seleccionar imagen</label>
+          <!-- <div class="invalid-feedback">Example invalid custom file feedback</div> -->
+        </div>
+      </div>
+      <div class="form-group col-md-6 col-12">
+        <label for="validationTooltip01" class="text-center">TITULO</label>
+        <input type="text" class="form-control" id="validationTooltip01" value="" required>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="col-12 col-md-4">
+        <button type="button" name="button" class="btn button-morado col-12">GUARDAR</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="row my-5">
+    <div class="col-3" *ngFor="let imagen of galeriaImg; let i = index">
+      <div class="card">
+        <img [src]="imagen.img" class="card-img-top img-fluid" [alt]="imagen.titulo">
+        <button type="button" name="eliminar" class="btn btn-danger" (click)="deleteImage(i)"><i class="fa fa-trash"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
